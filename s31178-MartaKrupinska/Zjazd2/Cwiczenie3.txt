@@ -1,0 +1,18 @@
+PATH- Lista rozdzielonych dwukropkami katalogów z programami wykonywalnymi, które mogą być poleceniami powłoki Linuxa.
+
+
+RANDOM- Wyświetla losową liczbę.
+
+
+PWD- Ścieżka do katalogu w którym się znadujemy.
+
+
+PS1- Znak zachęty
+
+USER- Nazwa zalogowanego użytkownika.
+
+
+HOSTNAME- Nazwa hosta lub jego adres
+
+
+OSTYPE- pokazuje system operacyjny

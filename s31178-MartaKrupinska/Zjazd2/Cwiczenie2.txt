@@ -1,0 +1,45 @@
+1.
+X=tekst
+echo $X
+bash
+echo $X
+
+Po pierwszych 2 komendach wyświeltił się napis "tekst". Po użyciu bash wyświetliła się pusta linia ponieważ komenda bash uruchamia nową powłokę.
+
+2.
+X=Tekst dłuższy
+echo $X
+
+Po wpisaniu tych komend wyswietla się komunikat że nie znaleziono polecenia dluzszy. Echo wyswietla pustą linie. Po dodaniu cudzysłowów albo apostrofów echo wyświetla "dluzszy tekst".
+W pierwszym przypadku komputer odczytuje słowo po spacji jako następna komenda po dodaniu cudzysłowu widzi to jako całość.
+
+3.
+X="Tekst 1"
+Y="tekst:$X"
+echo "$Y"
+Y='tekst:$X'
+echo "$Y"
+Y=tekst:$X
+echo "$Y"
+
+Cudzysłów odczytuje niekóktóre znaki specjalne np.$ więc pod $X podstawia wartość x. 
+Apostrof za to traktuje wszystko jako ciąg znaków. 
+
+4.
+A=Ala
+echo $A ma kota, a kot ma ${A}ę
+
+Wyświetla się "Ala ma kota, a kot ma Alaę.
+
+
+
+
+
+
+
+
+
+
+
+
+
